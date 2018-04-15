@@ -1,0 +1,107 @@
+/* Font Styles */
+
+html {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: #FFF8E3;
+}
+
+/* Background Colours etc. */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #FFF8E3;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #782800;
+}
+
+header h1 {
+  font-family: 'League Script', cursive;
+  padding: 0.8rem 1rem 0.8rem 2.5rem; /* Top & btm padding provided only to account for funky text style. */
+  font-size: 4rem;
+  white-space: nowrap; /* Prevent text wrap. */
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header .nav-buttons {
+  padding: 0 1rem;
+}
+
+header .btn {
+  background-color: #FFF8E3;
+  margin: 0 0.2rem;
+  padding: 0.5rem;
+  border: solid 1px #B64926;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 4px darkgrey;
+
+  transition: all 0.4s ease-in;
+}
+
+header .btn:hover {
+  background-color: #FFB03B;
+}
+
+/* Main Content */
+
+.main-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content .image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28rem;
+  overflow: hidden;
+}
+
+.image img {
+  width: 95%;
+  border: 3px solid white;
+  box-shadow: 0px 2px 4px darkgrey;
+}
+
+.image p {
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  font-size: 0.8rem;
+
+  border-top: 2px solid #782800;
+}
