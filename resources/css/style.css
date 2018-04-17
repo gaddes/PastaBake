@@ -44,27 +44,50 @@ header {
   right: 0;
 }
 
+.header-tablet {
+  display: none;
+}
+
+.header-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .header-desktop {
+    display: none;
+  }
+  .header-tablet {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header-desktop {
+    display: none;
+  }
+  .header-mobile {
+    display: flex;
+  }
+}
+
 header h1 {
   font-family: 'League Script', cursive;
-  padding: 0.8rem 1rem 0.8rem 2.5rem; /* Top & btm padding provided only to account for funky text style. */
+  padding: 0.8rem 0.8rem 0.8rem 2.5rem; /* Top & btm padding provided only to account for funky text style. */
   font-size: 4rem;
   white-space: nowrap; /* Prevent text wrap. */
 }
 
 header nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
-}
-
-header .nav-buttons {
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 
 header .btn {
   background-color: #FFF8E3;
-  margin: 0 0.2rem;
+  margin: 0 0.5rem;
   padding: 0.5rem;
   border: solid 1px #B64926;
   border-radius: 0.5rem;
