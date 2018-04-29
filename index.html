@@ -40,13 +40,24 @@
     <header class="header-mobile">
       <h1><a href="index.html">pb</a></h1>
       <nav>
-        <a class="btn" href="TBC.html">Menu</a>
+        <a class="btn hide" id="menu-btn" href="#" onclick="toggleNav()">Menu</a>
       </nav>
     </header>
 
+    <!-- SIDENAV -->
+
+    <nav class="sidenav" id="mySidenav">
+      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+      <a href="TBC.html">Gallery</a>
+      <a href="TBC.html">Merchandise</a>
+      <a href="TBC.html">Contact</a>
+    </nav>
+
+    <!-- /SIDENAV -->
+
     <!-- Main Content -->
 
-    <div class="main-content">
+    <div class="main-content" id="main">
       <div class="images">
         <div class="video">
           <video loop src="./resources/images/IMG_5765.m4v" autoplay poster="posterimage.jpg">
