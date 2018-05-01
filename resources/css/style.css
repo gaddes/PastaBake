@@ -44,6 +44,7 @@ header {
   align-items: center;
   border-bottom: 1px solid var(--color-maroon);
   box-shadow: 0px 2px 4px var(--color-box-shadow);
+  padding: 0.8rem 0;
 
   position: fixed;
   z-index: 5;
@@ -52,10 +53,18 @@ header {
   margin: 0 auto;
   left: 0;
   right: 0;
+
+  transition: all 0.2s ease-in;
 }
 
+/* By default, show desktop header only. */
 .header-tablet { display: none; }
 .header-mobile { display: none; }
+
+/* Remove padding (shrink header) on page scroll, implemented with JS. */
+.shrink {
+  padding: 0;
+}
 
 @media only screen and (max-width: 960px) {
   .header-desktop { display: none; }
@@ -67,6 +76,7 @@ header {
   .header-desktop { display: none; }
   .header-tablet { display: none; }
   .header-mobile { display: flex; }
+  .shrink h1 { font-size: 3.5rem; } /* Shrink font-size on page scroll for mobile header only. */
 }
 
 header h1 {
@@ -74,10 +84,8 @@ header h1 {
   padding: 0.8rem 0.8rem 0.8rem 2.5rem; /* Top & btm padding provided only to account for funky text style. */
   font-size: 4rem;
   white-space: nowrap; /* Prevent text wrap. */
-}
 
-@media only screen and (max-width: 700px) {
-  header h1 { font-size: 3rem; } /* Reduce font-size (and therefore header height) for smaller width screens. */
+  transition: all 0.4s linear;
 }
 
 header nav {
@@ -126,11 +134,10 @@ header .instagram:hover {
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
-  top: 5.5rem; /* To account for header */
   right: 0;
   background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 2rem; /* Place content 2rem from the top */
+  padding-top: 9rem; /* To account for header */
   transition: 0.4s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -157,15 +164,10 @@ header .instagram:hover {
 
 .main-content {
   padding: 1rem;
-  padding-top: 7rem; /* To account for fixed header. */
+  padding-top: 9rem; /* To account for fixed header. */
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-@media only screen and (max-width: 700px) {
-  .main-content { padding-top: 6rem; } /* Reduced to account for reduction in header height. */
-  .sidenav { top: 4.5rem; } /* Reduced as above. */
 }
 
 .main-content h2 {
