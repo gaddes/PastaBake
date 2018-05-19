@@ -1,111 +1,71 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Homepage | Pasta Bake</title>
-  <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
-  <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
-  <!-- Webfonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=League+Script" rel="stylesheet">
-  <!-- Favicon -->
-  <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
-  <!-- Material Design Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Site Container -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-  <div class="container">
+    <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Header -->
+    <!-- Webfonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=League+Script" rel="stylesheet">
 
-    <!-- Desktop Header -->
-    <header class="header-desktop">
-      <h1><a href="index.html">pasta bake</a></h1>
-      <nav>
-        <a class="btn" href="TBC.html">Gallery</a>
-        <a class="btn" href="TBC.html">Merchandise</a>
-        <a class="btn" href="mailto:bakepasta@gmail.com">Email</a>
-        <a class="btn facebook" href="https://www.facebook.com/Pasta-Bake-109402462480340/" target="_blank">Facebook</a>
-        <a class="btn instagram" href="https://www.instagram.com/pastabakers/">Instagram</a>
-      </nav>
-    </header>
+    <title>Homepage | Pasta Bake</title>
+  </head>
+  <body>
 
-    <!-- Tablet Header -->
-    <header class="header-tablet">
-      <h1><a href="index.html">pasta bake</a></h1>
-      <nav>
-        <a class="btn" href="TBC.html">Gallery</a>
-        <a class="btn" href="TBC.html">Merchandise</a>
-        <a class="btn" href="TBC.html">Contact</a>
-      </nav>
-    </header>
-
-    <!-- Mobile Header -->
-    <header class="header-mobile">
-      <h1><a href="index.html">pb</a></h1>
-      <nav>
-        <a class="btn hide" id="menu-btn" href="#" onclick="toggleNav()">Menu</a>
-      </nav>
-    </header>
-
-    <!-- Side Navigation Menu -->
-
-    <nav class="sidenav" id="mySidenav">
-      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-      <a href="TBC.html">Gallery</a>
-      <a href="TBC.html">Merchandise</a>
-      <a href="TBC.html">Contact</a>
-    </nav>
-
-    <!-- Main Content -->
-
-    <div class="main-content" id="main">
-      <h2>"Pasta bake is a form of baked pasta, using additional toppings to the diner’s taste, typically tomato sauce and cheese."</h2>
-      <div class="images">
-        <div class="video">
-          <video loop src="./resources/images/IMG_5765.m4v" autoplay poster="posterimage.jpg">
-            <span>Unfortunately, this video is unsupported - try downloading a modern browser such as <a href="https://www.google.co.uk/chrome/">Chrome!</a></span>
-          </video>
-          <p>An Italian/French match made in heaven; this cheesy concoction was sent in to us by Catherine from the UK!</p>
-        </div>
-        <div class="image">
-          <img src="./resources/images/pic1.jpg" alt="Pasta bake.">
-          <p>"Et voilà! Mountain pasta bake sent in by Matthew Gaddes and Daniel Parkin skiing in Val Thorens. Have a great week guys and stay safe."</p>
-        </div>
-        <div class="image">
-          <img src="./resources/images/pic2.jpg" alt="Pasta bake.">
-          <p>"Great effort sent in by pasta bake enthusiast Martin Sawyer who is carb loading for the Manchester half marathon with some chicken and bacon pasta bake! Good luck from all of us here at pasta bake HQ!"</p>
-        </div>
-        <div class="image">
-          <img src="./resources/images/pic3.jpg" alt="Pasta bake.">
-          <p>"Thanks to pasta bake fan Matt Squire for this pasta bologn-ake! Send us your creations!"</p>
-        </div>
-        <div class="image">
-          <img src="./resources/images/pic4.jpg" alt="Pasta bake.">
-          <p>"Fellow pasta bakers behold! An undisputed classic... tuna pasta bake!"</p>
-        </div>
-        <div class="image">
-          <img src="./resources/images/pic5.jpg" alt="Pasta bake.">
-          <p>"One for the carnivores - a classic meat-feast pasta bake."</p>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light mb-3" style="box-shadow: 0px 1px 1px rgba(0,0,0,0.4);">
+      <div class="container">
+        <a class="navbar-brand py-0 pl-3 d-none d-md-block" href="index.html" style="font-family: 'League Script', cursive; font-size: 3rem;">pasta bake</a>
+        <a class="navbar-brand py-0 pl-3 d-block d-md-none" href="index.html" style="font-family: 'League Script', cursive; font-size: 3rem;">pb</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item my-auto">
+              <a class="nav-link" href="recipes.html">Recipes</a>
+            </li>
+            <li class="nav-item my-auto">
+              <a class="nav-link" href="merchandise.html">Merchandise</a>
+            </li>
+            <li class="nav-item my-auto">
+              <a class="nav-link" href="TBC.html">Contact</a>
+            </li>
+            <li class="nav-item my-auto">
+              <a class="nav-link" href="https://www.facebook.com/Pasta-Bake-109402462480340/"><i class="material-icons align-middle" alt="Facebook icon">thumb_up</i></a>
+            </li>
+            <li class="nav-item my-auto">
+              <a class="nav-link" href="https://www.instagram.com/pastabakers/"><i class="material-icons align-middle" alt="Instagram icon">camera_alt</i></a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+
+    <div style="height:100px;"></div> <!-- Blank space to account for fixed header -->
+
+    <div class="jumbotron py-3 d-flex flex-row justify-content-center">
+      <h1 class="display-3">Homepage</h1>
     </div>
 
-    <!-- Footer -->
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-light">Pasta... like you've never seen before!</h1>
+        <p class="lead font-weight-light font-italic">"Pasta bake is a form of baked pasta, using additional toppings to the diner’s taste, typically tomato sauce and cheese."</p>
+        <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+      </div>
+      <div class="product-device box-shadow d-none d-md-block"></div>
+      <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+    </div>
 
-    <footer>
-      <span>&copy; Pasta Bake 2018</span>
-    </footer>
-  </div>
-
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
 </html>
-
-<!-- Note: Placing scripts at the bottom of the <body> element improves the display speed, because script compilation slows down the display. -->
-
-<script src="./resources/myScript.js"></script>
