@@ -1,109 +1,158 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Homepage | Pasta Bake</title>
-  <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
-  <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
-  <!-- Webfonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=League+Script" rel="stylesheet">
-  <!-- Favicon -->
-  <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
-  <!-- Material Design Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Homepage | Pasta Bake</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="./resources/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./resources/css/style.css" type="text/css" />
+    <!-- Webfonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=League+Script"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="./resources/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Material Design Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Site Container -->
 
-  <!-- Site Container -->
+    <div class="container">
+      <!-- Header -->
 
-  <div class="container">
+      <!-- Desktop Header -->
+      <header class="header-desktop">
+        <h1><a href="index.html">pasta bake</a></h1>
+        <nav>
+          <a class="btn" href="TBC.html">Gallery</a>
+          <a class="btn" href="TBC.html">Merchandise</a>
+          <a class="btn" href="mailto:bakepasta@gmail.com">Email</a>
+          <a
+            class="btn facebook"
+            href="https://www.facebook.com/Pasta-Bake-109402462480340/"
+            target="_blank"
+            >Facebook</a
+          >
+          <a
+            class="btn instagram"
+            href="https://www.instagram.com/pastabakers/"
+            target="_blank"
+            >Instagram</a
+          >
+        </nav>
+      </header>
 
-    <!-- Header -->
+      <!-- Tablet Header -->
+      <header class="header-tablet">
+        <h1><a href="index.html">pasta bake</a></h1>
+        <nav>
+          <a class="btn" href="TBC.html">Gallery</a>
+          <a class="btn" href="TBC.html">Merchandise</a>
+          <a class="btn" href="TBC.html">Contact</a>
+        </nav>
+      </header>
 
-    <!-- Desktop Header -->
-    <header class="header-desktop">
-      <h1><a href="index.html">pasta bake</a></h1>
-      <nav>
-        <a class="btn" href="TBC.html">Gallery</a>
-        <a class="btn" href="TBC.html">Merchandise</a>
-        <a class="btn" href="mailto:bakepasta@gmail.com">Email</a>
-        <a class="btn facebook" href="https://www.facebook.com/Pasta-Bake-109402462480340/" target="_blank">Facebook</a>
-        <a class="btn instagram" href="https://www.instagram.com/pastabakers/">Instagram</a>
+      <!-- Mobile Header -->
+      <header class="header-mobile">
+        <h1><a href="index.html">pb</a></h1>
+        <nav>
+          <a class="btn hide" id="menu-btn" href="#" onclick="toggleNav()"
+            >Menu</a
+          >
+        </nav>
+      </header>
+
+      <!-- Side Navigation Menu -->
+
+      <nav class="sidenav" id="mySidenav">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+        <a href="TBC.html">Gallery</a> <a href="TBC.html">Merchandise</a>
+        <a href="TBC.html">Contact</a>
       </nav>
-    </header>
 
-    <!-- Tablet Header -->
-    <header class="header-tablet">
-      <h1><a href="index.html">pasta bake</a></h1>
-      <nav>
-        <a class="btn" href="TBC.html">Gallery</a>
-        <a class="btn" href="TBC.html">Merchandise</a>
-        <a class="btn" href="TBC.html">Contact</a>
-      </nav>
-    </header>
+      <!-- Main Content -->
 
-    <!-- Mobile Header -->
-    <header class="header-mobile">
-      <h1><a href="index.html">pb</a></h1>
-      <nav>
-        <a class="btn hide" id="menu-btn" href="#" onclick="toggleNav()">Menu</a>
-      </nav>
-    </header>
-
-    <!-- Side Navigation Menu -->
-
-    <nav class="sidenav" id="mySidenav">
-      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-      <a href="TBC.html">Gallery</a>
-      <a href="TBC.html">Merchandise</a>
-      <a href="TBC.html">Contact</a>
-    </nav>
-
-    <!-- Main Content -->
-
-    <div class="main-content" id="main">
-      <h2>"Pasta bake is a form of baked pasta, using additional toppings to the diner’s taste, typically tomato sauce and cheese."</h2>
-      <div class="images">
-        <div class="video">
-          <video loop src="./resources/images/IMG_5765.m4v" autoplay poster="posterimage.jpg">
-            <span>Unfortunately, this video is unsupported - try downloading a modern browser such as <a href="https://www.google.co.uk/chrome/">Chrome!</a></span>
-          </video>
-          <p>An Italian/French match made in heaven; this cheesy concoction was sent in to us by Catherine from the UK!</p>
-        </div>
-        <div class="image">
-          <img src="./resources/images/pic1.jpg" alt="Pasta bake.">
-          <p>"Et voilà! Mountain pasta bake sent in by Matthew Gaddes and Daniel Parkin skiing in Val Thorens. Have a great week guys and stay safe."</p>
-        </div>
-        <div class="image">
-          <img src="./resources/images/pic2.jpg" alt="Pasta bake.">
-          <p>"Great effort sent in by pasta bake enthusiast Martin Sawyer who is carb loading for the Manchester half marathon with some chicken and bacon pasta bake! Good luck from all of us here at pasta bake HQ!"</p>
-        </div>
-        <div class="image">
-          <img src="./resources/images/pic3.jpg" alt="Pasta bake.">
-          <p>"Thanks to pasta bake fan Matt Squire for this pasta bologn-ake! Send us your creations!"</p>
-        </div>
-        <div class="image">
-          <img src="./resources/images/pic4.jpg" alt="Pasta bake.">
-          <p>"Fellow pasta bakers behold! An undisputed classic... tuna pasta bake!"</p>
-        </div>
-        <div class="image">
-          <img src="./resources/images/pic5.jpg" alt="Pasta bake.">
-          <p>"One for the carnivores - a classic meat-feast pasta bake."</p>
+      <div class="main-content" id="main">
+        <h2>
+          "Pasta bake is a form of baked pasta, using additional toppings to the
+          diner’s taste, typically tomato sauce and cheese."
+        </h2>
+        <div class="images">
+          <div class="video">
+            <video
+              loop
+              src="./resources/images/IMG_5765.m4v"
+              autoplay
+              poster="posterimage.jpg"
+            >
+              <span
+                >Unfortunately, this video is unsupported - try downloading a
+                modern browser such as
+                <a href="https://www.google.co.uk/chrome/">Chrome!</a></span
+              >
+            </video>
+            <p>
+              An Italian/French match made in heaven; this cheesy concoction was
+              sent in to us by Catherine from the UK!
+            </p>
+          </div>
+          <div class="image">
+            <img src="./resources/images/pic1.jpg" alt="Pasta bake." />
+            <p>
+              "Et voilà! Mountain pasta bake sent in by Matthew Gaddes and
+              Daniel Parkin skiing in Val Thorens. Have a great week guys and
+              stay safe."
+            </p>
+          </div>
+          <div class="image">
+            <img src="./resources/images/pic2.jpg" alt="Pasta bake." />
+            <p>
+              "Great effort sent in by pasta bake enthusiast Martin Sawyer who
+              is carb loading for the Manchester half marathon with some chicken
+              and bacon pasta bake! Good luck from all of us here at pasta bake
+              HQ!"
+            </p>
+          </div>
+          <div class="image">
+            <img src="./resources/images/pic3.jpg" alt="Pasta bake." />
+            <p>
+              "Thanks to pasta bake fan Matt Squire for this pasta bologn-ake!
+              Send us your creations!"
+            </p>
+          </div>
+          <div class="image">
+            <img src="./resources/images/pic4.jpg" alt="Pasta bake." />
+            <p>
+              "Fellow pasta bakers behold! An undisputed classic... tuna pasta
+              bake!"
+            </p>
+          </div>
+          <div class="image">
+            <img src="./resources/images/pic5.jpg" alt="Pasta bake." />
+            <p>"One for the carnivores - a classic meat-feast pasta bake."</p>
+          </div>
         </div>
       </div>
+
+      <!-- Footer -->
+
+      <footer><span>&copy; Pasta Bake 2018</span></footer>
     </div>
-
-    <!-- Footer -->
-
-    <footer>
-      <span>&copy; Pasta Bake 2018</span>
-    </footer>
-  </div>
-
-</body>
+  </body>
 </html>
 
 <!-- Note: Placing scripts at the bottom of the <body> element improves the display speed, because script compilation slows down the display. -->
